@@ -34,12 +34,12 @@ class InviteViewController: UIViewController {
         
     }
     
-    func postInviteapi(_ drugboxId: Int, _ nickname: String) {
-        let urlString: String = "\(K.apiURL.POSTinviteURL)\(drugboxId)&nickname=\(nickname)"
-        
-        
-        
-    }
+//    func postInviteapi(_ drugboxId: Int, _ nickname: String) {
+//        let urlString: String = "\(K.apiURL.POSTinviteURL)\(drugboxId)&nickname=\(nickname)"
+//        
+//        
+//        
+//    }
     
     func postTest(_ drugboxId: Int, _ nickname: String) {
             let url = "http://ptsv3.com/t/yejun-980116/post/"

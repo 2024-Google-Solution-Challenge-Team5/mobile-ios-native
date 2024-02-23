@@ -1,15 +1,17 @@
 //
-//  WayToDelete.swift
+//  DrugCountCell.swift
 //  DrugBox
 //
-//  Created by 김도연 on 1/27/24.
+//  Created by 김도연 on 2/23/24.
 //
 
 import UIKit
 
-class WayToDelete: UITableViewCell {
-    
-    @IBOutlet weak var TitleName: UILabel!
+class DrugCountCell: UITableViewCell {
+
+    @IBOutlet weak var LocationLabel: UILabel!
+    @IBOutlet weak var ExpDateLabel: UILabel!
+    @IBOutlet weak var CountLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -21,3 +23,4 @@ class WayToDelete: UITableViewCell {
     }
     
 }
+

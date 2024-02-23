@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="DrugCountCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DrugCountCell" id="5q2-sl-SGK" customClass="DrugCountCell" customModule="DrugBox" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="306" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5q2-sl-SGK" id="rIb-qR-EGI">
+                <rect key="frame" x="0.0" y="0.0" width="306" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="etB-6s-vrW">
+                        <rect key="frame" x="20" y="11.999999999999998" width="266" height="20.333333333333329"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="식탁 위" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8S-G4-CZG">
+                                <rect key="frame" x="0.0" y="0.0" width="48.666666666666664" height="20.333333333333332"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6개" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqT-hI-Yke">
+                                <rect key="frame" x="112.33333333333334" y="0.0" width="25.333333333333343" height="20.333333333333332"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2024.04" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Us2-4B-Bjt">
+                                <rect key="frame" x="201.33333333333334" y="0.0" width="64.666666666666657" height="20.333333333333332"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="etB-6s-vrW" secondAttribute="trailing" constant="20" id="5By-Ub-r44"/>
+                    <constraint firstItem="etB-6s-vrW" firstAttribute="leading" secondItem="rIb-qR-EGI" secondAttribute="leading" constant="20" id="Yaz-2L-ObA"/>
+                    <constraint firstItem="etB-6s-vrW" firstAttribute="centerY" secondItem="rIb-qR-EGI" secondAttribute="centerY" id="w2n-56-pCP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="CountLabel" destination="kqT-hI-Yke" id="P7Q-e4-6J7"/>
+                <outlet property="ExpDateLabel" destination="Us2-4B-Bjt" id="LzI-3m-1x9"/>
+                <outlet property="LocationLabel" destination="g8S-G4-CZG" id="stI-SV-Wr5"/>
+            </connections>
+            <point key="canvasLocation" x="12.213740458015266" y="12.67605633802817"/>
+        </tableViewCell>
+    </objects>
+</document>

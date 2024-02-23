@@ -12,8 +12,11 @@ class AlarmListViewController: UIViewController {
     
     let dateformatter = DateFormatter()
     var alarms: [Alarm] = [
-        Alarm(isUpdated: true, timestamp: "2024-01-27 12:20", alarmBody: "동백님이 구급상자1에 타이레놀 서방정을 추가하였습니다."),
-        Alarm(isUpdated: false, timestamp: "2024-01-27 9:33", alarmBody: "구급상자1에 들어있는 부루펜의 사용 가능 기한이 1주일 남았습니다. 교체하세요!")
+        Alarm(isUpdated: true, timestamp: "2024-02-21 12:20", alarmBody: "goodbox9876님이 거실 구급상자에 타이레놀8시간이알서방정을 추가하였습니다."),
+        Alarm(isUpdated: false, timestamp: "2024-02-16 9:00", alarmBody: "거실 구급상자에 들어있는 부루펜의 사용 가능 기한이 1주일 남았습니다. 교체하세요!"),
+        Alarm(isUpdated: false, timestamp: "2024-01-27 18:38", alarmBody: "동백님이 거실 구급상자에 어린이타이레놀산160밀리그램(아세트아미노펜)을 추가하였습니다."),
+        Alarm(isUpdated: false, timestamp: "2024-01-13 9:00", alarmBody: "자취방 구급상자에 들어있는 타이레놀 서방정의 사용 가능 기한이 1주일 남았습니다. 교체하세요!"),
+        
     ]
     
     override func viewDidLoad() {

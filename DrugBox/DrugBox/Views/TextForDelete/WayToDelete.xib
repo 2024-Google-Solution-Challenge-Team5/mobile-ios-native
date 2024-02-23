@@ -15,21 +15,20 @@
                 <rect key="frame" x="0.0" y="0.0" width="376" height="110"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMp-Nc-rRE">
-                        <rect key="frame" x="0.0" y="0.0" width="376" height="110"/>
-                        <state key="normal" title="Button"/>
-                        <buttonConfiguration key="configuration" style="tinted" title="title"/>
-                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gco-kG-K1w">
+                        <rect key="frame" x="164" y="43" width="48" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="KMp-Nc-rRE" secondAttribute="bottom" id="GHH-QM-UQq"/>
-                    <constraint firstAttribute="trailing" secondItem="KMp-Nc-rRE" secondAttribute="trailing" id="IC2-C9-FdW"/>
-                    <constraint firstItem="KMp-Nc-rRE" firstAttribute="top" secondItem="x2I-gY-aqE" secondAttribute="top" id="Woz-pc-trt"/>
-                    <constraint firstItem="KMp-Nc-rRE" firstAttribute="leading" secondItem="x2I-gY-aqE" secondAttribute="leading" id="pcF-L5-0lE"/>
+                    <constraint firstItem="Gco-kG-K1w" firstAttribute="centerY" secondItem="x2I-gY-aqE" secondAttribute="centerY" id="7YK-ex-Iul"/>
+                    <constraint firstItem="Gco-kG-K1w" firstAttribute="centerX" secondItem="x2I-gY-aqE" secondAttribute="centerX" id="9E6-HD-YC2"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="TitleButton" destination="KMp-Nc-rRE" id="xES-BX-OwD"/>
+                <outlet property="TitleName" destination="Gco-kG-K1w" id="Ayt-dg-5iJ"/>
             </connections>
             <point key="canvasLocation" x="-141.98473282442748" y="-18.30985915492958"/>
         </tableViewCell>

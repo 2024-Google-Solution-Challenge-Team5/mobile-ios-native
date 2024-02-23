@@ -15,8 +15,8 @@ class DefaultBoxViewController: UIViewController {
     
     // 테이블 셀 선택 시 해당 구급상자 내의 알약 정보 get 해서 다음 페이지에 넘겨주기
     var boxList: [BoxListModel] = [
-//        BoxListModel(name: "test-01", drugboxId: 1, imageURL: ""),
-//        BoxListModel(name: "test-02", drugboxId: 12, imageURL: "")
+        BoxListModel(name: "거실 구급상자", drugboxId: 1, imageURL: "box_dummy"),
+        BoxListModel(name: "자취방 구급상자", drugboxId: 12, imageURL: "box_dummy_3")
     ]
     //    var testList: [tempModel] = []
     
@@ -32,8 +32,8 @@ class DefaultBoxViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         // 다른 뷰 갓다와서 업데이트할 건 여기다가
-        let userid = MenuSelectViewController.userID
-        getDrugBoxList(userid) // 데이터 없어서 에러뜸 잠시
+//        let userid = MenuSelectViewController.userID
+//        getDrugBoxList(userid) // 데이터 없어서 에러뜸 잠시
         
         // 다시 화면으로 돌아왔을 때 선택 해제
         if let selectedIndexPath = boxTableView.indexPathForSelectedRow {
@@ -113,24 +113,11 @@ class DefaultBoxViewController: UIViewController {
         return returnList
     }
 }
-//MARK: - test model
-struct tempModel: Codable {
-    let id: Int
-    let title: String
-    let userId: Int
-}
 //MARK: - box for listview model
 struct BoxListModel: Codable {
     let name: String
     let drugboxId: Int
     let imageURL: String
-}
-//MARK: - test data
-struct tempData: Codable{
-    let completed: Bool
-    let id: Int
-    let title: String
-    let userId: Int
 }
 
 struct BoxListData: Codable {
@@ -151,8 +138,9 @@ extension DefaultBoxViewController: UITableViewDataSource, UITableViewDelegate {
         let cell = boxTableView.dequeueReusableCell(withIdentifier: K.tableCell.boxCellIdentifier, for: indexPath) as! BoxCell
         
         cell.BoxNameLabel.text = " \(box.name)"
-        if let url = URL(string: box.imageURL) {
-            cell.boxImage.loadImage(url: url)
+        if let url = UIImage(named: box.imageURL) {
+            cell.boxImage.image = url
+            cell.boxImage.contentMode = .scaleAspectFit
         } else {
             cell.boxImage.image = UIImage(systemName: K.drugboxDefaultImage)
         }

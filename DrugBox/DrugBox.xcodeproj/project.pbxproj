@@ -54,6 +54,23 @@
 		16EFBB442B84F1E5006C2EFF /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 16EFBB432B84F1E5006C2EFF /* GoogleSignIn */; };
 		16EFBB462B84F1E5006C2EFF /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 16EFBB452B84F1E5006C2EFF /* GoogleSignInSwift */; };
 		16EFBB482B8720CA006C2EFF /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EFBB472B8720CA006C2EFF /* RegisterViewController.swift */; };
+		16EFBB4A2B88B5BE006C2EFF /* Main_page.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16EFBB492B88B5BE006C2EFF /* Main_page.jpg */; };
+		16EFBB512B88B8A3006C2EFF /* box_dummy_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 16EFBB4B2B88B8A3006C2EFF /* box_dummy_2.png */; };
+		16EFBB522B88B8A3006C2EFF /* box_dummy.png in Resources */ = {isa = PBXBuildFile; fileRef = 16EFBB4C2B88B8A3006C2EFF /* box_dummy.png */; };
+		16EFBB532B88B8A3006C2EFF /* city_way_3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 16EFBB4D2B88B8A3006C2EFF /* city_way_3.jpeg */; };
+		16EFBB542B88B8A3006C2EFF /* city_way.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 16EFBB4E2B88B8A3006C2EFF /* city_way.jpeg */; };
+		16EFBB552B88B8A3006C2EFF /* box_dummy_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 16EFBB4F2B88B8A3006C2EFF /* box_dummy_3.png */; };
+		16EFBB562B88B8A3006C2EFF /* city_way_2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 16EFBB502B88B8A3006C2EFF /* city_way_2.jpeg */; };
+		16EFBB582B88D65A006C2EFF /* 스크린샷 2024-02-23 오후 10.33.47.png in Resources */ = {isa = PBXBuildFile; fileRef = 16EFBB572B88D65A006C2EFF /* 스크린샷 2024-02-23 오후 10.33.47.png */; };
+		16EFBB5B2B88D783006C2EFF /* DrugCountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EFBB5A2B88D783006C2EFF /* DrugCountCell.swift */; };
+		16EFBB5D2B88D78D006C2EFF /* DrugCountCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16EFBB5C2B88D78D006C2EFF /* DrugCountCell.xib */; };
+		16EFBB602B88DEB5006C2EFF /* MemberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EFBB5F2B88DEB5006C2EFF /* MemberCell.swift */; };
+		16EFBB622B88DEC2006C2EFF /* MemberCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16EFBB612B88DEC2006C2EFF /* MemberCell.xib */; };
+		16EFBB652B88E1CD006C2EFF /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16EFBB642B88E1CD006C2EFF /* WebKit.framework */; };
+		16EFBB672B88F545006C2EFF /* LocatioonResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EFBB662B88F545006C2EFF /* LocatioonResultViewController.swift */; };
+		16EFBB692B88F7B7006C2EFF /* Locations.json in Resources */ = {isa = PBXBuildFile; fileRef = 16EFBB682B88F7B7006C2EFF /* Locations.json */; };
+		16EFBB6C2B88FB77006C2EFF /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EFBB6B2B88FB77006C2EFF /* LocationCell.swift */; };
+		16EFBB6E2B88FB81006C2EFF /* LocationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16EFBB6D2B88FB81006C2EFF /* LocationCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +139,23 @@
 		16EFBB3E2B8105A1006C2EFF /* DrugCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugCell.swift; sourceTree = "<group>"; };
 		16EFBB402B8105AD006C2EFF /* DrugCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrugCell.xib; sourceTree = "<group>"; };
 		16EFBB472B8720CA006C2EFF /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		16EFBB492B88B5BE006C2EFF /* Main_page.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Main_page.jpg; path = ../../../../../Downloads/DummyPhotos/Main_page.jpg; sourceTree = "<group>"; };
+		16EFBB4B2B88B8A3006C2EFF /* box_dummy_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = box_dummy_2.png; path = ../../../../../Downloads/DummyPhotos/box_dummy_2.png; sourceTree = "<group>"; };
+		16EFBB4C2B88B8A3006C2EFF /* box_dummy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = box_dummy.png; path = ../../../../../Downloads/DummyPhotos/box_dummy.png; sourceTree = "<group>"; };
+		16EFBB4D2B88B8A3006C2EFF /* city_way_3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = city_way_3.jpeg; path = ../../../../../Downloads/DummyPhotos/city_way_3.jpeg; sourceTree = "<group>"; };
+		16EFBB4E2B88B8A3006C2EFF /* city_way.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = city_way.jpeg; path = ../../../../../Downloads/DummyPhotos/city_way.jpeg; sourceTree = "<group>"; };
+		16EFBB4F2B88B8A3006C2EFF /* box_dummy_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = box_dummy_3.png; path = ../../../../../Downloads/DummyPhotos/box_dummy_3.png; sourceTree = "<group>"; };
+		16EFBB502B88B8A3006C2EFF /* city_way_2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = city_way_2.jpeg; path = ../../../../../Downloads/DummyPhotos/city_way_2.jpeg; sourceTree = "<group>"; };
+		16EFBB572B88D65A006C2EFF /* 스크린샷 2024-02-23 오후 10.33.47.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "스크린샷 2024-02-23 오후 10.33.47.png"; path = "../../../../../Desktop/스크린샷 2024-02-23 오후 10.33.47.png"; sourceTree = "<group>"; };
+		16EFBB5A2B88D783006C2EFF /* DrugCountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugCountCell.swift; sourceTree = "<group>"; };
+		16EFBB5C2B88D78D006C2EFF /* DrugCountCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrugCountCell.xib; sourceTree = "<group>"; };
+		16EFBB5F2B88DEB5006C2EFF /* MemberCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberCell.swift; sourceTree = "<group>"; };
+		16EFBB612B88DEC2006C2EFF /* MemberCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemberCell.xib; sourceTree = "<group>"; };
+		16EFBB642B88E1CD006C2EFF /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		16EFBB662B88F545006C2EFF /* LocatioonResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocatioonResultViewController.swift; sourceTree = "<group>"; };
+		16EFBB682B88F7B7006C2EFF /* Locations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Locations.json; sourceTree = "<group>"; };
+		16EFBB6B2B88FB77006C2EFF /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
+		16EFBB6D2B88FB81006C2EFF /* LocationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +163,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16EFBB652B88E1CD006C2EFF /* WebKit.framework in Frameworks */,
 				16EFBB462B84F1E5006C2EFF /* GoogleSignInSwift in Frameworks */,
 				16C3B9FF2B6A8A7A00CD8B97 /* Alamofire in Frameworks */,
 				16EFBB442B84F1E5006C2EFF /* GoogleSignIn in Frameworks */,
@@ -167,6 +202,15 @@
 		161DB4222B761AAF00F85377 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				16EFBB4B2B88B8A3006C2EFF /* box_dummy_2.png */,
+				16EFBB572B88D65A006C2EFF /* 스크린샷 2024-02-23 오후 10.33.47.png */,
+				16EFBB4F2B88B8A3006C2EFF /* box_dummy_3.png */,
+				16EFBB4C2B88B8A3006C2EFF /* box_dummy.png */,
+				16EFBB502B88B8A3006C2EFF /* city_way_2.jpeg */,
+				16EFBB4D2B88B8A3006C2EFF /* city_way_3.jpeg */,
+				16EFBB4E2B88B8A3006C2EFF /* city_way.jpeg */,
+				16EFBB492B88B5BE006C2EFF /* Main_page.jpg */,
+				16EFBB682B88F7B7006C2EFF /* Locations.json */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -213,6 +257,7 @@
 				16E008CE2B63FDDC004F83F0 /* DrugBoxTests */,
 				16E008D82B63FDDC004F83F0 /* DrugBoxUITests */,
 				16E008B62B63FDDB004F83F0 /* Products */,
+				16EFBB632B88E1CD006C2EFF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -266,6 +311,9 @@
 		16E008E82B63FE53004F83F0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				16EFBB6A2B88FB69006C2EFF /* Location */,
+				16EFBB5E2B88DEA1006C2EFF /* Member */,
+				16EFBB592B88D775006C2EFF /* DrugCount */,
 				16EFBB3B2B810580006C2EFF /* Drug */,
 				16EFBB3A2B81056B006C2EFF /* TextForDelete */,
 				16EFBB392B810562006C2EFF /* Alarm */,
@@ -343,6 +391,7 @@
 			isa = PBXGroup;
 			children = (
 				16913C872B64FBB1006A0F0A /* MapViewController.swift */,
+				16EFBB662B88F545006C2EFF /* LocatioonResultViewController.swift */,
 			);
 			path = SearchPage;
 			sourceTree = "<group>";
@@ -388,6 +437,41 @@
 				16EFBB402B8105AD006C2EFF /* DrugCell.xib */,
 			);
 			path = Drug;
+			sourceTree = "<group>";
+		};
+		16EFBB592B88D775006C2EFF /* DrugCount */ = {
+			isa = PBXGroup;
+			children = (
+				16EFBB5A2B88D783006C2EFF /* DrugCountCell.swift */,
+				16EFBB5C2B88D78D006C2EFF /* DrugCountCell.xib */,
+			);
+			path = DrugCount;
+			sourceTree = "<group>";
+		};
+		16EFBB5E2B88DEA1006C2EFF /* Member */ = {
+			isa = PBXGroup;
+			children = (
+				16EFBB5F2B88DEB5006C2EFF /* MemberCell.swift */,
+				16EFBB612B88DEC2006C2EFF /* MemberCell.xib */,
+			);
+			path = Member;
+			sourceTree = "<group>";
+		};
+		16EFBB632B88E1CD006C2EFF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				16EFBB642B88E1CD006C2EFF /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		16EFBB6A2B88FB69006C2EFF /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				16EFBB6B2B88FB77006C2EFF /* LocationCell.swift */,
+				16EFBB6D2B88FB81006C2EFF /* LocationCell.xib */,
+			);
+			path = Location;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -505,9 +589,21 @@
 			files = (
 				16EFBB412B8105AD006C2EFF /* DrugCell.xib in Resources */,
 				16E008C52B63FDDB004F83F0 /* LaunchScreen.storyboard in Resources */,
+				16EFBB622B88DEC2006C2EFF /* MemberCell.xib in Resources */,
+				16EFBB6E2B88FB81006C2EFF /* LocationCell.xib in Resources */,
+				16EFBB522B88B8A3006C2EFF /* box_dummy.png in Resources */,
 				16E008C22B63FDDB004F83F0 /* Assets.xcassets in Resources */,
+				16EFBB552B88B8A3006C2EFF /* box_dummy_3.png in Resources */,
 				16E008C02B63FDDB004F83F0 /* Main.storyboard in Resources */,
 				16913C8F2B654A67006A0F0A /* WayToDelete.xib in Resources */,
+				16EFBB562B88B8A3006C2EFF /* city_way_2.jpeg in Resources */,
+				16EFBB542B88B8A3006C2EFF /* city_way.jpeg in Resources */,
+				16EFBB532B88B8A3006C2EFF /* city_way_3.jpeg in Resources */,
+				16EFBB582B88D65A006C2EFF /* 스크린샷 2024-02-23 오후 10.33.47.png in Resources */,
+				16EFBB4A2B88B5BE006C2EFF /* Main_page.jpg in Resources */,
+				16EFBB512B88B8A3006C2EFF /* box_dummy_2.png in Resources */,
+				16EFBB692B88F7B7006C2EFF /* Locations.json in Resources */,
+				16EFBB5D2B88D78D006C2EFF /* DrugCountCell.xib in Resources */,
 				16E008FF2B642B33004F83F0 /* AlarmCell.xib in Resources */,
 				161DB4092B6E6E4800F85377 /* BoxCell.xib in Resources */,
 			);
@@ -535,6 +631,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				16913C882B64FBB1006A0F0A /* MapViewController.swift in Sources */,
+				16EFBB5B2B88D783006C2EFF /* DrugCountCell.swift in Sources */,
 				161DB4132B6E927E00F85377 /* UIImage.swift in Sources */,
 				161DB40F2B6E8E1D00F85377 /* ItemListViewController.swift in Sources */,
 				16EFBB372B810006006C2EFF /* Date.swift in Sources */,
@@ -543,6 +640,7 @@
 				16205A822B7BB4B0002DF4D2 /* AddDrugViewController.swift in Sources */,
 				161DB4262B763B2800F85377 /* ButtonTappedDelegate.swift in Sources */,
 				16E008F72B640459004F83F0 /* LoginViewController.swift in Sources */,
+				16EFBB672B88F545006C2EFF /* LocatioonResultViewController.swift in Sources */,
 				161DB40B2B6E709500F85377 /* BoxCell.swift in Sources */,
 				161DB4212B76190100F85377 /* UIImageView.swift in Sources */,
 				16EFBB3F2B8105A1006C2EFF /* DrugCell.swift in Sources */,
@@ -552,6 +650,7 @@
 				16913C842B64FB59006A0F0A /* MainDeleteViewController.swift in Sources */,
 				16C3BA012B6A955800CD8B97 /* CreateNewBoxViewController.swift in Sources */,
 				161DB4052B6DF79300F85377 /* UILabel.swift in Sources */,
+				16EFBB602B88DEB5006C2EFF /* MemberCell.swift in Sources */,
 				16E008F32B6401B2004F83F0 /* MenuSelectViewController.swift in Sources */,
 				16E009012B642EB5004F83F0 /* Alarm.swift in Sources */,
 				16E008FD2B642ABE004F83F0 /* AlarmCell.swift in Sources */,
@@ -565,6 +664,7 @@
 				16913C812B64FB0B006A0F0A /* DefaultBoxViewController.swift in Sources */,
 				16E008BB2B63FDDB004F83F0 /* SceneDelegate.swift in Sources */,
 				16205A842B7BB4CB002DF4D2 /* ShowDrugDetailViewController.swift in Sources */,
+				16EFBB6C2B88FB77006C2EFF /* LocationCell.swift in Sources */,
 				16913C8C2B654A36006A0F0A /* WayToDelete.swift in Sources */,
 				161DB4072B6DF84000F85377 /* JoinWIthInvitationCodeViewController.swift in Sources */,
 				161DB40D2B6E899C00F85377 /* InfoViewController.swift in Sources */,

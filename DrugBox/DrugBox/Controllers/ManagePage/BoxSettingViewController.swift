@@ -21,19 +21,34 @@ class BoxSettingViewController: UIViewController {
     var boxInviteCode : String?
     var boxSetting : BoxSettingModel?
     
+    var boxUsers : [User] = [
+        User(nickname: "D_r_thy", userId: 12), User(nickname: "goodbox9876", userId: 15)
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        getBoxDetail(drugBoxId ?? 0)
-        boxSetting = BoxSettingModel(boxName: "test-01", drugboxId: 1, imageURL: "", inviteCode: "1234-1234-1234-1234", users: [User(nickname: "AAA", userId: 12), User(nickname: "BBB", userId: 15)])
+//        getBoxDetail(drugBoxId ?? 0)
+        boxSetting = BoxSettingModel(boxName: "거실 구급상자", drugboxId: 1, imageURL: "box_dummy", inviteCode: "1234-2343-8764-1224", users: [User(nickname: "D_r_thy", userId: 12), User(nickname: "goodbox9876", userId: 15)])
         DispatchQueue.main.async {
             self.BoxNameLabel.text = self.boxSetting!.boxName
-            if let url = URL(string: self.boxSetting!.imageURL) {
-                self.BoxImageView.loadImage(url: url)
-            } else {
-                self.BoxImageView.image = UIImage(systemName: K.drugboxDefaultImage)
+//            if let url = URL(string: self.boxSetting!.imageURL) {
+//                self.BoxImageView.loadImage(url: url)
+//            } else {
+//                self.BoxImageView.image = UIImage(systemName: K.drugboxDefaultImage)
+//            }
+            if let url = UIImage(named: self.boxSetting?.imageURL ?? K.drugboxDefaultImage) {
+                self.BoxImageView.image = url
+                self.BoxImageView.contentMode = .scaleAspectFit
             }
             self.boxInviteCode = self.boxSetting!.inviteCode
         }
+        
+        MemberTableView.delegate = self
+        MemberTableView.dataSource = self
+
+        MemberTableView.register(UINib(nibName: K.tableCell.memberCellNibName, bundle: nil), forCellReuseIdentifier: K.tableCell.memberCellNibName)
+        MemberTableView.rowHeight = UITableView.automaticDimension
+        MemberTableView.estimatedRowHeight = UITableView.automaticDimension
         
     }
     
@@ -134,3 +149,19 @@ struct User: Codable{
     let userId: Int
 }
 
+extension BoxSettingViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        boxUsers.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let user = boxUsers[indexPath.row]
+        let cell = MemberTableView.dequeueReusableCell(withIdentifier: K.tableCell.memberCellNibName, for: indexPath) as! MemberCell
+        
+        cell.NameLabel.text = user.nickname
+        
+        return cell
+    }
+    
+    
+}

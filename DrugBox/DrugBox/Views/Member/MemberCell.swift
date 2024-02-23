@@ -1,16 +1,13 @@
 //
-//  WayToDelete.swift
+//  MemberCell.swift
 //  DrugBox
 //
-//  Created by 김도연 on 1/27/24.
+//  Created by 김도연 on 2/23/24.
 //
-
 import UIKit
 
-class WayToDelete: UITableViewCell {
-    
-    @IBOutlet weak var TitleName: UILabel!
-    
+class MemberCell: UITableViewCell {
+    @IBOutlet weak var NameLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -21,3 +18,4 @@ class WayToDelete: UITableViewCell {
     }
     
 }
+

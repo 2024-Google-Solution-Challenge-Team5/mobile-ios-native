@@ -17,15 +17,16 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func buttonPressed(_ sender: UIButton) {
-        if let email = EmailTextField.text, let password = PasswordTextField.text {
-            postLogin(email: email, pw: password)
-            self.performSegue(withIdentifier: K.loginSegue, sender: self)
-        }
+        self.performSegue(withIdentifier: K.loginSegue, sender: self)
+//        if let email = EmailTextField.text, let password = PasswordTextField.text {
+//            postLogin(email: email, pw: password)
+//            self.performSegue(withIdentifier: K.loginSegue, sender: self)
+//        }
     }
     
     
     @IBAction func googleLoginButtonPressed(_ sender: UIButton) {
-        
+        self.performSegue(withIdentifier: K.loginSegue, sender: self)
     }
     
     
