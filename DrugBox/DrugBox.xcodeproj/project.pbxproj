@@ -71,6 +71,10 @@
 		16EFBB692B88F7B7006C2EFF /* Locations.json in Resources */ = {isa = PBXBuildFile; fileRef = 16EFBB682B88F7B7006C2EFF /* Locations.json */; };
 		16EFBB6C2B88FB77006C2EFF /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EFBB6B2B88FB77006C2EFF /* LocationCell.swift */; };
 		16EFBB6E2B88FB81006C2EFF /* LocationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16EFBB6D2B88FB81006C2EFF /* LocationCell.xib */; };
+		16EFBB702B8AE891006C2EFF /* WasteDrugsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EFBB6F2B8AE891006C2EFF /* WasteDrugsListViewController.swift */; };
+		16EFBB732B8B067D006C2EFF /* WasteDrugCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EFBB722B8B067D006C2EFF /* WasteDrugCell.swift */; };
+		16EFBB752B8B0686006C2EFF /* WasteDrugCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16EFBB742B8B0686006C2EFF /* WasteDrugCell.xib */; };
+		16EFBB772B8B08DC006C2EFF /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EFBB762B8B08DC006C2EFF /* UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -156,6 +160,10 @@
 		16EFBB682B88F7B7006C2EFF /* Locations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Locations.json; sourceTree = "<group>"; };
 		16EFBB6B2B88FB77006C2EFF /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 		16EFBB6D2B88FB81006C2EFF /* LocationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationCell.xib; sourceTree = "<group>"; };
+		16EFBB6F2B8AE891006C2EFF /* WasteDrugsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasteDrugsListViewController.swift; sourceTree = "<group>"; };
+		16EFBB722B8B067D006C2EFF /* WasteDrugCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasteDrugCell.swift; sourceTree = "<group>"; };
+		16EFBB742B8B0686006C2EFF /* WasteDrugCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WasteDrugCell.xib; sourceTree = "<group>"; };
+		16EFBB762B8B08DC006C2EFF /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +203,7 @@
 				161DB4202B76190100F85377 /* UIImageView.swift */,
 				16EFBB342B80FFDC006C2EFF /* String.swift */,
 				16EFBB362B810006006C2EFF /* Date.swift */,
+				16EFBB762B8B08DC006C2EFF /* UIColor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -311,6 +320,7 @@
 		16E008E82B63FE53004F83F0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				16EFBB712B8B066B006C2EFF /* WasteDrug */,
 				16EFBB6A2B88FB69006C2EFF /* Location */,
 				16EFBB5E2B88DEA1006C2EFF /* Member */,
 				16EFBB592B88D775006C2EFF /* DrugCount */,
@@ -383,6 +393,7 @@
 			children = (
 				16913C832B64FB59006A0F0A /* MainDeleteViewController.swift */,
 				161DB40C2B6E899C00F85377 /* InfoViewController.swift */,
+				16EFBB6F2B8AE891006C2EFF /* WasteDrugsListViewController.swift */,
 			);
 			path = DeletePage;
 			sourceTree = "<group>";
@@ -472,6 +483,15 @@
 				16EFBB6D2B88FB81006C2EFF /* LocationCell.xib */,
 			);
 			path = Location;
+			sourceTree = "<group>";
+		};
+		16EFBB712B8B066B006C2EFF /* WasteDrug */ = {
+			isa = PBXGroup;
+			children = (
+				16EFBB722B8B067D006C2EFF /* WasteDrugCell.swift */,
+				16EFBB742B8B0686006C2EFF /* WasteDrugCell.xib */,
+			);
+			path = WasteDrug;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -599,6 +619,7 @@
 				16EFBB562B88B8A3006C2EFF /* city_way_2.jpeg in Resources */,
 				16EFBB542B88B8A3006C2EFF /* city_way.jpeg in Resources */,
 				16EFBB532B88B8A3006C2EFF /* city_way_3.jpeg in Resources */,
+				16EFBB752B8B0686006C2EFF /* WasteDrugCell.xib in Resources */,
 				16EFBB582B88D65A006C2EFF /* 스크린샷 2024-02-23 오후 10.33.47.png in Resources */,
 				16EFBB4A2B88B5BE006C2EFF /* Main_page.jpg in Resources */,
 				16EFBB512B88B8A3006C2EFF /* box_dummy_2.png in Resources */,
@@ -637,6 +658,7 @@
 				16EFBB372B810006006C2EFF /* Date.swift in Sources */,
 				16E008F92B6404FF004F83F0 /* Constants.swift in Sources */,
 				16EFBB352B80FFDC006C2EFF /* String.swift in Sources */,
+				16EFBB702B8AE891006C2EFF /* WasteDrugsListViewController.swift in Sources */,
 				16205A822B7BB4B0002DF4D2 /* AddDrugViewController.swift in Sources */,
 				161DB4262B763B2800F85377 /* ButtonTappedDelegate.swift in Sources */,
 				16E008F72B640459004F83F0 /* LoginViewController.swift in Sources */,
@@ -657,6 +679,8 @@
 				161DB4112B6E8F3100F85377 /* DrugModel.swift in Sources */,
 				16205A862B7BB4F4002DF4D2 /* AddPrescriptionViewController.swift in Sources */,
 				161DB4192B752B0E00F85377 /* AFDateResponse.swift in Sources */,
+				16EFBB732B8B067D006C2EFF /* WasteDrugCell.swift in Sources */,
+				16EFBB772B8B08DC006C2EFF /* UIColor.swift in Sources */,
 				161DB4282B7A4E3B00F85377 /* InviteViewController.swift in Sources */,
 				16E008B92B63FDDB004F83F0 /* AppDelegate.swift in Sources */,
 				16E008FB2B640BD6004F83F0 /* AlarmListViewController.swift in Sources */,
@@ -861,6 +885,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -893,6 +918,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

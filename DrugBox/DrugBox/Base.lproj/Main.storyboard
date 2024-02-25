@@ -757,45 +757,48 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="tXw-LL-epc">
-                                <rect key="frame" x="0.0" y="0.0" width="430" height="703"/>
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="600"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="703" id="sa1-7M-z6f"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="700" id="xHa-sL-fha"/>
+                                    <constraint firstAttribute="height" constant="600" id="kjR-Z0-a3d"/>
                                 </constraints>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jic-me-3Ul">
                                 <rect key="frame" x="60" y="772" width="310" height="80"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="oBD-fV-J3N"/>
+                                    <constraint firstAttribute="height" constant="80" id="SEa-EV-Ooa"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="내가 가진 폐의약품 확인하기">
                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
                                     <color key="baseBackgroundColor" red="0.33570563730000003" green="0.65094302400000004" blue="0.34494986900000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="showWasteDrugListButtonPressed:" destination="Wxt-Hx-S0F" eventType="touchUpInside" id="dde-yn-yzE"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="P2Z-gh-RAe"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="tXw-LL-epc" firstAttribute="leading" secondItem="P2Z-gh-RAe" secondAttribute="leading" id="8w3-SY-Jer"/>
-                            <constraint firstItem="jic-me-3Ul" firstAttribute="leading" secondItem="P2Z-gh-RAe" secondAttribute="leading" constant="60" id="TLd-q9-Z1i"/>
-                            <constraint firstItem="P2Z-gh-RAe" firstAttribute="trailing" secondItem="jic-me-3Ul" secondAttribute="trailing" constant="60" id="UAz-ra-n51"/>
-                            <constraint firstItem="tXw-LL-epc" firstAttribute="top" secondItem="fh5-Og-Qlz" secondAttribute="top" id="XOJ-Ho-qTJ"/>
-                            <constraint firstItem="tXw-LL-epc" firstAttribute="trailing" secondItem="P2Z-gh-RAe" secondAttribute="trailing" id="ZmH-s4-Mbc"/>
-                            <constraint firstItem="P2Z-gh-RAe" firstAttribute="bottom" secondItem="jic-me-3Ul" secondAttribute="bottom" constant="80" id="dKH-2A-3Zh"/>
+                            <constraint firstItem="tXw-LL-epc" firstAttribute="leading" secondItem="P2Z-gh-RAe" secondAttribute="leading" id="Cls-nt-vYE"/>
+                            <constraint firstItem="tXw-LL-epc" firstAttribute="trailing" secondItem="P2Z-gh-RAe" secondAttribute="trailing" id="Ist-aV-09R"/>
+                            <constraint firstItem="tXw-LL-epc" firstAttribute="top" secondItem="fh5-Og-Qlz" secondAttribute="top" id="QIE-aT-49C"/>
+                            <constraint firstItem="jic-me-3Ul" firstAttribute="leading" secondItem="P2Z-gh-RAe" secondAttribute="leading" constant="60" id="QiV-6u-4zC"/>
+                            <constraint firstItem="P2Z-gh-RAe" firstAttribute="trailing" secondItem="jic-me-3Ul" secondAttribute="trailing" constant="60" id="SoE-82-5Ns"/>
+                            <constraint firstItem="P2Z-gh-RAe" firstAttribute="bottom" secondItem="jic-me-3Ul" secondAttribute="bottom" constant="80" id="zEs-n4-scZ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="LZc-bo-LeV"/>
                     <connections>
                         <outlet property="ContentsTableView" destination="tXw-LL-epc" id="ZpE-jg-Akg"/>
                         <segue destination="1ph-aC-qpY" kind="show" identifier="ToInfo" id="rZg-XZ-Mvx"/>
+                        <segue destination="BbP-DJ-vDA" kind="show" identifier="ToWasteDrugsList" id="gFm-Ap-Jnr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uFj-yU-S4V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="46" y="4148"/>
+            <point key="canvasLocation" x="44.651162790697676" y="4147.8540772532187"/>
         </scene>
         <!--폐의약품 분리배출 안내(성동구)-->
         <scene sceneID="c6y-tN-z9x">
@@ -833,20 +836,56 @@
             </objects>
             <point key="canvasLocation" x="972" y="4149"/>
         </scene>
-        <!--View Controller-->
+        <!--Waste Drugs List View Controller-->
         <scene sceneID="u4J-bi-iuK">
             <objects>
-                <viewController id="BbP-DJ-vDA" sceneMemberID="viewController">
+                <viewController id="BbP-DJ-vDA" customClass="WasteDrugsListViewController" customModule="DrugBox" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="a6Y-fr-aI5">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="55" estimatedRowHeight="55" sectionHeaderHeight="28" estimatedSectionHeaderHeight="28" sectionFooterHeight="28" estimatedSectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5wr-P0-ajx">
+                                <rect key="frame" x="0.0" y="44" width="430" height="600"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="600" id="f54-N2-7RN"/>
+                                </constraints>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Geq-gQ-7KV">
+                                <rect key="frame" x="60" y="772" width="310" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="bzG-Ff-L00"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="폐기하기">
+                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="22"/>
+                                    <color key="baseBackgroundColor" red="0.33570563730000003" green="0.65094302400000004" blue="0.34494986900000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="deleteButtonPressed:" destination="BbP-DJ-vDA" eventType="touchUpInside" id="2gl-Y3-fm9"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="wIg-SM-2rX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5wr-P0-ajx" firstAttribute="top" secondItem="wIg-SM-2rX" secondAttribute="top" id="0uK-Ha-tqL"/>
+                            <constraint firstItem="wIg-SM-2rX" firstAttribute="trailing" secondItem="Geq-gQ-7KV" secondAttribute="trailing" constant="60" id="3mY-ff-qWr"/>
+                            <constraint firstItem="5wr-P0-ajx" firstAttribute="trailing" secondItem="wIg-SM-2rX" secondAttribute="trailing" id="60c-Ka-6rs"/>
+                            <constraint firstItem="5wr-P0-ajx" firstAttribute="leading" secondItem="wIg-SM-2rX" secondAttribute="leading" id="Jrt-BU-YLp"/>
+                            <constraint firstItem="wIg-SM-2rX" firstAttribute="bottom" secondItem="Geq-gQ-7KV" secondAttribute="bottom" constant="80" id="p9R-Rv-Ne2"/>
+                            <constraint firstItem="Geq-gQ-7KV" firstAttribute="leading" secondItem="wIg-SM-2rX" secondAttribute="leading" constant="60" id="yMv-0F-dyz"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Q45-YP-Um0"/>
+                    <connections>
+                        <outlet property="ContentsTableView" destination="5wr-P0-ajx" id="M2W-V5-tet"/>
+                        <outlet property="DeleteButton" destination="Geq-gQ-7KV" id="0OA-vJ-2vk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ffX-rw-KOy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1891" y="4148"/>
+            <point key="canvasLocation" x="1919" y="4148"/>
         </scene>
         <!--폐기장소 검색하기-->
         <scene sceneID="7nm-wf-MRy">
@@ -1291,7 +1330,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" allowsEditingTextAttributes="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qIp-oP-GIq">
                                 <rect key="frame" x="20" y="498" width="390" height="414"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <mutableString key="text">1. 감기로 인한 발열 및 동통(통증), 두통, 신경통, 근육통, 월경통, 염좌통(삔 통증)
+                                <string key="text">1. 감기로 인한 발열 및 동통(통증), 두통, 신경통, 근육통, 월경통, 염좌통(삔 통증)
 2. 다음 질환에도 사용할 수 있다.
 치통, 관절통, 류마티양 동통(통증)1. 경고
 1) 매일 세 잔 이상 정기적으로 술을 마시는 사람이 이 약이나 다른 해열 진통제를 복용해야 할 경우 반드시 의사 또는 약사와 상의해야 한다. 이러한 사람이 이 약을 복용하면 간손상이 유발될 수 있다.
@@ -1307,7 +1346,7 @@
 7) 아스피린 천식(비스테로이드성 소염(항염)제에 의한 천식발작 유발) 또는 그 병력이 있는 환자
 8) 다음의 약물을 복용한 환자 : 바르비탈계 약물, 삼환계 항우울제
 9) 알코올을 복용한 사람
-10) 이 약은 유당을 함유하고 있으므로, 갈락토오스 불내성(galactose intolerance), Lapp 유당분해효소 결핍증(Lapp lactase deficiency) 또는 포도당  -갈락토오스 흡수장애(glucose  -galactose malabsorption) 등의 유전적인 문제가 있는 환자에게는 투여하면 안 된다.</mutableString>
+10) 이 약은 유당을 함유하고 있으므로, 갈락토오스 불내성(galactose intolerance), Lapp 유당분해효소 결핍증(Lapp lactase deficiency) 또는 포도당  -갈락토오스 흡수장애(glucose  -galactose malabsorption) 등의 유전적인 문제가 있는 환자에게는 투여하면 안 된다.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>

@@ -15,7 +15,7 @@ class ItemListViewController: UIViewController {
     
     var Drugs : [DrugModel] = [
         DrugModel(boxId: 1, drugName: "타이레놀정160mg", drugCount: 6, location: "거실 약상자", expDate: "2026-04-29".toDate()!, inDisposalList: false),
-        DrugModel(boxId: 1, drugName: "어린이부루펜시럽(80mL", drugCount: 80, location: "부엌 찬장", expDate: "2028-01-10".toDate()!, inDisposalList: false),
+        DrugModel(boxId: 1, drugName: "어린이부루펜시럽(80mL)", drugCount: 80, location: "부엌 찬장", expDate: "2028-01-10".toDate()!, inDisposalList: false),
         DrugModel(boxId: 1, drugName: "베아제정", drugCount: 7, location: "거실 약상자", expDate: "2027-10-05".toDate()!, inDisposalList: false),
     ]
     

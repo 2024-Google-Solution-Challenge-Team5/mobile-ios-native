@@ -10,7 +10,7 @@ import UIKit
 class MainDeleteViewController: UIViewController {
     @IBOutlet weak var ContentsTableView: UITableView!
     
-    var contents: [String] = ["폐의약품 분리배출", "서울권 지역 폐기 방법", "폐의약품 분리배출 안내(성동구)", "폐의약품 분리배출 안내(서초구)"
+    var contents: [String] = ["폐의약품 분리배출", "서울권 지역 폐기 방법", "폐의약품 분리배출 안내(성동구)", "폐의약품 분리배출 안내(서초구)", "폐의약품 분리배출 안내(강동구)", "폐의약품 분리배출 안내(강남구)", "폐의약품 분리배출 안내(종로구)", "폐의약품 분리배출 안내(동대문구)", "폐의약품 분리배출 안내(송파구)", "경북권 지역 폐기 방법"
     ]
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +41,12 @@ class MainDeleteViewController: UIViewController {
         }
         
     }
+    
+    @IBAction func showWasteDrugListButtonPressed(_ sender: UIButton) {
+        
+        self.performSegue(withIdentifier: K.deleteSegue.goToWasteDrugList, sender: self)
+    }
+    
     
 }
 

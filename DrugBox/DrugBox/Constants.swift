@@ -31,6 +31,8 @@ struct K {
         static let memberCellNibName = "MemberCell"
         
         static let locationCellNibName = "LocationCell"
+        
+        static let wasteDrugCellNibName = "WasteDrugCell"
     }
 
     
@@ -53,6 +55,7 @@ struct K {
     
     struct deleteSegue {
         static let showInformationContents = "ToInfo"
+        static let goToWasteDrugList = "ToWasteDrugsList"
     }
     
     struct searchSegue {
